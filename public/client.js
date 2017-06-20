@@ -38,7 +38,9 @@
             this.input.value = '';
 
             this.trigger('sent', message);
-
+            // console.log('here');
+            // console.log(this.clients)
+            // console.log('after');
             return false;
         },
         connect: function(ws_url) {
@@ -95,6 +97,11 @@
         focus: function() {
             this.input.focus();
         },
+        // broadcast: function(text,e) {
+        //     this.clients.forEach( function(client) {
+        //         client.send
+        //     });
+        // },
         boot: function() {
 
             console.log('Booting up');
